@@ -1,4 +1,3 @@
-import { Children } from "react";
 import Navbar from "../Navbar"
 
 type AppShellProps = {
