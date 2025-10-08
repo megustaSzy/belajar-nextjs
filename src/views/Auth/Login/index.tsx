@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from './Login.module.css'
+import styles from './Login.module.scss'
 
 const LoginViews = () => {
     const { push} = useRouter();
@@ -9,9 +9,9 @@ const LoginViews = () => {
     };
     return (
         <div className={styles.login}>
-            <h1>Login Page</h1>
+            <h1 className="big">Login Page</h1>
             <button onClick={() => HandleLogin()}>Login</button>
-            <p>Belum punya akun? Registrasi
+            <p style={{color: 'blue', border: '1px solid blue'}}>Belum punya akun? Registrasi
                 <Link href="/auth/register"> disini</Link>
             </p>
         </div>
