@@ -9,7 +9,7 @@ const LoginViews = () => {
     };
     return (
         <div className={styles.login}>
-            <h1 className="big">Login Page</h1>
+            <h1 className="text-3xl font-bold ">Login Page</h1>
             <button onClick={() => HandleLogin()}>Login</button>
             <p style={{color: 'blue', border: '1px solid blue'}}>Belum punya akun? Registrasi
                 <Link href="/auth/register"> disini</Link>
